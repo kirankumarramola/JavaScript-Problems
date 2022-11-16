@@ -4,3 +4,12 @@ function FillElements(x){
     return num;
 }
 console.log(FillElements(10));
+
+let n = [66,78,44,54,76];
+function myFunction(x){
+   for(let i=0;i<n.length;i++){
+    n[i]=x;
+   }
+   return n;
+}
+//console.log(myFunction(99));
