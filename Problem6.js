@@ -2,7 +2,7 @@ let num = [1,2,4,7,8,3,5,10];
 function FillElements(x){
     num.fill(x);
     return num;
-}
+} 
 console.log(FillElements(11));
 
 let n = [66,78,44,54,76];
