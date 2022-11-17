@@ -1,16 +1,20 @@
-const numbers = [2,6,7,9,10,6,1,2,2];
-let countElement = 0;
-let res = 0;
-numbers.forEach(check);
-function check(n){
-    let count = 0;
-    for(let i=0;i<numbers.length;i++){
-        if(n==numbers[i])
-        count++;
+function getRepeat(){
+    let numbers = [16,23,23,56,67,89,44,23,44];
+    let countElement = 0;
+    let res = [];
+    numbers.forEach(check);
+    function check(num){
+        let count = 0;
+        for(let i = 0; i<numbers.length; i++){
+            if(num == numbers[i])
+            count++;
+        }
+        if(count>countElement){
+            countElement = count;
+            res = num;
+        }
     }
-    if(count>countElement){
-        count = countElement;
-        res = n;
-    }
+    console.log(res);
+    
 }
-console.log(res);
+getRepeat();
