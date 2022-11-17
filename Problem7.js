@@ -4,7 +4,7 @@ function PrintDate(){
     console.log("Day : "+Day());
     console.log("Month : "+d.getMonth());
     console.log("Year : "+d.getFullYear());
-}
+} 
 function Day(){
     let day = d.getDay();
     switch(day){
